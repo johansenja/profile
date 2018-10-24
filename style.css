@@ -135,12 +135,24 @@ li {
   content:" bio";
 }
 
+#sidebar-bio:hover {
+  color:green;
+}
+
 #sidebar-movies:hover:after {
   content:" movies";
 }
 
+#sidebar-movies:hover {
+  color:#d216e0;
+}
+
 #sidebar-bottom:hover:after {
   content:" bottom";
+}
+
+#sidebar-bottom:hover {
+  color:#1536ef;
 }
 
 #page-content {
