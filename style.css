@@ -151,7 +151,7 @@ li {
 }
 
 #sidebar a:hover {
-  font-size: 30px;
+  font-size: 25px;
 }
 
 #sidebar-top:hover:after {
@@ -160,6 +160,7 @@ li {
 
 #sidebar-top:hover {
   color: white;
+  min-width: 180px;
 }
 
 #sidebar-bio:hover:after {
@@ -168,6 +169,7 @@ li {
 
 #sidebar-bio:hover {
   color:#1536ef;
+  min-width: 180px;
 }
 
 #sidebar-movies:hover:after {
@@ -176,6 +178,16 @@ li {
 
 #sidebar-movies:hover {
   color:yellow;
+  min-width: 180px;
+}
+
+#sidebar-photography:hover:after {
+  content:" photography";
+}
+
+#sidebar-photography:hover {
+  color:#1ef1ff;
+  min-width: 180px;
 }
 
 #sidebar-bottom:hover:after {
@@ -183,7 +195,8 @@ li {
 }
 
 #sidebar-bottom:hover {
-  color:#289b93;
+  color:#12ef12;
+  min-width: 180px;
 }
 
 #page-content {
