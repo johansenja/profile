@@ -1,0 +1,127 @@
+body {
+  background-color: rgb(245,245,245)
+  color: rgb(100,100,100);
+  font-family: 'Slabo 27px', serif;
+  letter-spacing: 1px
+}
+
+h1 {
+  color:#d18640;
+  font-family: 'Rubik', sans-serif;
+}
+
+h2 {
+  color:#ed4d0f;
+}
+
+a {
+  text-decoration: none;
+  color:rgb(150,150,150);
+}
+
+a:hover {
+  color:#d18640;
+}
+
+table img {
+  width: 150px
+}
+
+td {
+  padding:20px;
+}
+
+ul {
+  padding-left: 0
+}
+
+li {
+  display:inline;
+  padding:0 10px;
+}
+
+.container {
+  margin:35px auto;
+
+}
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 70%;
+  }
+}
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 80%;
+  }
+}
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 90%;
+  }
+}
+
+@media (min-width: 961px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 60%;
+  }
+}
+
+.card {
+  background-color: white;
+  box-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+  border: 1px solid rgba(0,0,0,0.1);
+  padding: 10px;
+  text-align: center;
+  margin: 10px;
+}
+
+.profile-header {
+  text-align: left;
+}
+
+.avatar {
+  width:200px;
+  height:200px;
+  object-fit: cover;
+  border-radius: 50%;
+  float:right;
+  margin:3px;
+}
+
+.bio h2, p {
+  text-align: left;
+}
+
+.bio {
+  padding:25px;
+}
+
+.btn {
+  border-radius: 7px;
+  padding: 10px 15px;
+  margin: 30px, 0px;
+  box-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+}
+
+.btn-red {
+  background-color: #e2502f;
+  color:rgb(245,245,245);
+  border:1px solid rgba(250, 252, 204, 0.5);
+}
+
+.btn-red:hover {
+  color:white;
+  font-weight: 800;
+}
+
+
+
+
+
+
+
