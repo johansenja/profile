@@ -42,7 +42,6 @@ li {
 
 .container {
   margin:35px auto;
-
 }
 
 @media (max-width: 960px) {
@@ -80,10 +79,6 @@ li {
   margin: 10px;
 }
 
-.profile-header {
-  text-align: left;
-}
-
 .avatar {
   width:200px;
   height:200px;
@@ -91,14 +86,6 @@ li {
   border-radius: 50%;
   float:right;
   margin:3px;
-}
-
-.bio h2, p {
-  text-align: left;
-}
-
-.bio {
-  padding:25px;
 }
 
 .btn {
@@ -121,15 +108,56 @@ li {
 
 #sidebar {
   position: fixed;
-  width: 300px;
+
   left: 0;
   top: 0;
   bottom: 0;
-}
-#page-content {
-  margin-left: 300px;
+  background-color: rgb(40,40,40);
+  padding-top: 35px;
+  color: rgb(250,250,250)
 }
 
+#sidebar li {
+  display:block;
+  text-align: center;
+  margin:0 30px 30px 30px;
+}
+
+#sidebar a:hover {
+  font-size: 30px;
+}
+
+#sidebar-top:hover:after {
+  content:" top";
+}
+
+#sidebar-bio:hover:after {
+  content:" bio";
+}
+
+#sidebar-movies:hover:after {
+  content:" movies";
+}
+
+#sidebar-bottom:hover:after {
+  content:" bottom";
+}
+
+#page-content {
+  margin-left: 10%;
+}
+
+#profile-header {
+  text-align: left;
+}
+
+#bio h2, p {
+  text-align: left;
+}
+
+#bio {
+  padding:25px;
+}
 
 
 
