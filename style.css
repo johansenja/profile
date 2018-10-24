@@ -35,6 +35,10 @@ ul {
   padding-left: 0
 }
 
+#bio ul {
+  margin-top: 30px;
+}
+
 #bio li {
   display:inline;
   padding:0 10px;
@@ -92,6 +96,12 @@ ul {
   margin:3px;
 }
 
+.avatar:hover {
+  width:201px;
+  height:201px;
+  cursor:pointer;
+}
+
 .btn {
   border-radius: 7px;
   padding: 10px 15px;
@@ -119,6 +129,7 @@ ul {
 
 .photography-image:hover {
   box-shadow: 3px 2px 4px rgba(0,0,0,0.1);
+  width:100%;
 }
 
 .photography-image img {
