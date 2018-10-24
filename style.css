@@ -35,9 +35,13 @@ ul {
   padding-left: 0
 }
 
-li {
+#bio li {
   display:inline;
   padding:0 10px;
+}
+
+#bio li:hover {
+  font-size: 18px;
 }
 
 .container {
