@@ -120,6 +120,15 @@ ul {
   font-weight: 800;
 }
 
+.item {
+height:250px;
+}
+
+.carousel-inner > .item > img {
+  position:relative;
+  margin: auto auto;
+}
+
 .photography-image {
   box-shadow: 2px 2px 1px rgba(0,0,0,0.1);
   margin: 10px 0;
@@ -158,6 +167,10 @@ ul {
   box-shadow: 2px 0px 1px rgba(0,0,0,0.1);
 }
 
+#myCarousel {
+  height:250px;
+}
+
 #sidebar li {
   display:block;
   text-align: center;
@@ -175,7 +188,7 @@ ul {
 
 #sidebar-top:hover {
   color: white;
-  min-width: 180px;
+  min-width: 230px;
 }
 
 #sidebar-bio:hover:after {
@@ -184,16 +197,16 @@ ul {
 
 #sidebar-bio:hover {
   color:#1536ef;
-  min-width: 180px;
+  min-width: 230px;
 }
 
-#sidebar-movies:hover:after {
-  content:" movies";
+#sidebar-tech:hover:after {
+  content:" tech";
 }
 
-#sidebar-movies:hover {
+#sidebar-tech:hover {
   color:yellow;
-  min-width: 180px;
+  min-width: 230px;
 }
 
 #sidebar-photography:hover:after {
@@ -202,7 +215,7 @@ ul {
 
 #sidebar-photography:hover {
   color:#1ef1ff;
-  min-width: 180px;
+  min-width: 230px;
 }
 
 #sidebar-bottom:hover:after {
@@ -211,7 +224,7 @@ ul {
 
 #sidebar-bottom:hover {
   color:#12ef12;
-  min-width: 180px;
+  min-width: 230px;
 }
 
 #page-content {
