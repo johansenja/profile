@@ -106,6 +106,31 @@ li {
   font-weight: 800;
 }
 
+.photography-image {
+  box-shadow: 2px 2px 1px rgba(0,0,0,0.1);
+  margin: 10px 0;
+  background-color: #f9f6ef;
+  color: rgb(100,100,100);
+}
+
+.photography-image:hover {
+  box-shadow: 3px 2px 4px rgba(0,0,0,0.1);
+}
+
+.photography-image img {
+  border:2px solid rgba(0,0,0,0.2);
+  position:relative;
+  width:100%;
+}
+
+.photography-image img:hover {
+  border-bottom: none;
+}
+
+.caption {
+  padding:5px 0;
+}
+
 #sidebar {
   position: fixed;
   left: 0;
@@ -114,7 +139,7 @@ li {
   background-color: rgb(200,200,200);
   padding-top: 35px;
   background-color: #a24a4a;
-  border-right:1px solid rgba(0,0,0,0.25);
+  border-right:1px solid rgba(0,0,0,0.2);
   box-shadow: 2px 0px 1px rgba(0,0,0,0.1);
 }
 
@@ -177,6 +202,26 @@ li {
   padding:25px;
 }
 
+#img-1:hover:after {
+content: "Action: My dogs playing together";
+}
 
+#img-2:hover:after {
+content: "Drone: Me in the river Wear in Durham";
+}
 
+#img-3:hover:after {
+content: "Still Life: A Hibiscus flower in a church garden in Tbilisi";
+}
 
+#img-4:hover:after {
+content: "Portraits: Two rowers before the start of a big race";
+}
+
+#img-5:hover:after {
+content: "Sport: rowers from above";
+}
+
+#img-6:hover:after {
+content: "Drone practical applications: farm land surveillance";
+}
