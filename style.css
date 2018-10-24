@@ -120,7 +120,7 @@ li {
 #sidebar li {
   display:block;
   text-align: center;
-  margin:0 30px 30px 30px;
+  padding:0 30px 30px 30px;
 }
 
 #sidebar a:hover {
