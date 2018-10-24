@@ -96,7 +96,7 @@ li {
 }
 
 .btn-red {
-  background-color: #e2502f;
+  background-color: #c73413;
   color:rgb(245,245,245);
   border:1px solid rgba(250, 252, 204, 0.5);
 }
@@ -108,19 +108,21 @@ li {
 
 #sidebar {
   position: fixed;
-
   left: 0;
   top: 0;
   bottom: 0;
-  background-color: rgb(40,40,40);
+  background-color: rgb(200,200,200);
   padding-top: 35px;
-  color: rgb(250,250,250)
+  background-color: #a24a4a;
+  border-right:1px solid rgba(0,0,0,0.25);
+  box-shadow: 2px 0px 1px rgba(0,0,0,0.1);
 }
 
 #sidebar li {
   display:block;
   text-align: center;
   padding:0 30px 30px 30px;
+  color:black;
 }
 
 #sidebar a:hover {
@@ -131,12 +133,16 @@ li {
   content:" top";
 }
 
+#sidebar-top:hover {
+  color: white;
+}
+
 #sidebar-bio:hover:after {
   content:" bio";
 }
 
 #sidebar-bio:hover {
-  color:green;
+  color:#1536ef;
 }
 
 #sidebar-movies:hover:after {
@@ -144,7 +150,7 @@ li {
 }
 
 #sidebar-movies:hover {
-  color:#d216e0;
+  color:yellow;
 }
 
 #sidebar-bottom:hover:after {
@@ -152,7 +158,7 @@ li {
 }
 
 #sidebar-bottom:hover {
-  color:#1536ef;
+  color:#289b93;
 }
 
 #page-content {
