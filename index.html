@@ -20,48 +20,46 @@
     <meta name="msapplication-TileImage" content="images/icons.ico/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
-    <link href="https://fonts.googleapis.com/css?family=Rubik|Slabo+27px" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Krub|Slabo+27px" rel="stylesheet">
     <meta property="og:title" content="Joseph Johansen | Ruby on Rails developer" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </head>
 
   <body>
-    <div id="page-content">
-      <div id="sidebar">
-        <ul>
-          <a href="#">
-            <li id="sidebar-top">
-              <i class="fas fa-arrow-up"></i>
-            </li>
-          </a>
-          <a href="#bio">
-            <li id="sidebar-bio">
-              <i class="fas fa-user"></i>
-            </li>
-          </a>
-          <a href="#tech">
-            <li id="sidebar-tech">
-              <i class="fas fa-code"></i>
-            </li>
-          </a>
-          <a href="#photography">
-            <li id="sidebar-photography">
-              <i class="fas fa-camera"></i>
-            </li>
-          </a>
-          <a href="#footer">
-            <li id="sidebar-bottom">
-              <i class="fas fa-arrow-down"></i>
-            </li>
-          </a>
-        </ul>
+    <div class="page-content">
+      <div class="navbar">
+        <a href="#">
+          <p id="navbar-top">
+            <i class="fas fa-arrow-up"></i>
+          </p>
+        </a>
+        <a href="#bio">
+          <p id="navbar-bio">
+            <i class="fas fa-user"></i>
+          </p>
+        </a>
+        <a href="#tech">
+          <p id="navbar-tech">
+            <i class="fas fa-code"></i>
+          </p>
+        </a>
+        <a href="#photography">
+          <p id="navbar-photography">
+            <i class="fas fa-camera"></i>
+          </p>
+        </a>
+        <a href="#footer">
+          <p id="navbar-bottom">
+            <i class="fas fa-arrow-down"></i>
+          </p>
+        </a>
       </div>
       <div class="container">
-          <div class="card" id="profile-header">
-              <img src="images/profile.png" alt="graduation" class="avatar">
-              <h1>Joseph Johansen</h1>
+        <div class="cards">
+          <div class="card" id="profile-header" style="background-image: url(images/profile.png)">
+            <div class="card-text-bar"><h1>Joseph Johansen</h1></div>
           </div>
           <div class="card" id="bio">
             <h2>Programmer at Le Wagon</h2>
@@ -75,7 +73,7 @@
             </ul>
           </div>
 
-          <div class="card" id="movies">
+          <div class="card" id="tech">
             <h2>My Tech Skills</h2>
               <div id="myCarousel" class="carousel slide" data-ride="carousel">
 
@@ -122,30 +120,29 @@
             </div>
           </div>
 
-          <div class="card" id="photography">
             <h2>Photography by Me</h2>
-            <div class="photography-image" id="img-1">
+            <div class="photography-image card" id="img-1">
               <img src="images/dogs.jpg" alt="two dogs playing">
             </div>
-            <div class="photography-image" id="img-2">
+            <div class="photography-image card" id="img-2">
               <img src="images/drone.jpg" alt="drone photography">
             </div>
-            <div class="photography-image" id="img-3">
+            <div class="photography-image card" id="img-3">
               <img src="images/hibiscus.jpg" alt="red hibiscus in tbilisi">
             </div>
-            <div class="photography-image" id="img-4">
+            <div class="photography-image card" id="img-4">
             </div>
-            <div class="photography-image" id="img-5">
+            <div class="photography-image card" id="img-5">
               <img src="images/sport.JPG" alt="rowing boat from overhead">
             </div>
-            <div class="photography-image" id="img-6">
+            <div class="photography-image card" id="img-6">
               <img src="images/drone2.jpg" alt="tea production from overhead">
             </div>
-          </div>
 
           <div class="card" id="footer">
             <h2>About this page</h2>
             <p>I coded this page during the <a href="https://www.lewagon.com/">FullStack program</a> at Le Wagon. It has probably been the best experience of my entire life.</p>
+          </div>
           </div>
         </div>
       </div>

@@ -1,0 +1,64 @@
+@import url("components/avatar.css");
+@import url("components/tabs.css");
+@import url("components/profile_header.css");
+@import url("components/list.css");
+@import url("components/card.css");
+@import url("components/button.css");
+@import url("components/message.css");
+@import url("components/banner.css");
+@import url("components/navbar.css");
+@import url("components/photo-card.css");
+
+body {
+  margin: 0;
+  font-family: 'Slabo 27px', serif;
+}
+h1, h2, h3 {
+  font-family: Raleway, Helvetica, sans-serif;
+  font-family: 'Slabo 27px', serif;
+}
+a {
+  text-decoration: none !important;
+}
+
+h1 {
+  font-family: 'Krub', sans-serif;
+  margin:0;
+}
+
+.text-center {
+  text-align: center;
+}
+.container {
+  max-width: 90%;
+  padding-top: 100px;
+  margin-left: 7.5%;
+}
+
+#profile-header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#bio {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#bio ul {
+  margin-top: 30px;
+}
+
+#bio li {
+  display:inline;
+  padding:0 10px;
+}
+
+#bio li:hover {
+  font-size: 18px;
+}
