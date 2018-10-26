@@ -8,6 +8,7 @@
 @import url("components/banner.css");
 @import url("components/navbar.css");
 @import url("components/photo-card.css");
+@import url("layouts/main-grid.css");
 
 body {
   margin: 0;
@@ -28,37 +29,4 @@ h1 {
 
 .text-center {
   text-align: center;
-}
-.container {
-  max-width: 90%;
-  padding-top: 100px;
-  margin-left: 7.5%;
-}
-
-#profile-header {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: space-around;
-}
-
-#bio {
-  padding: 15px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: space-around;
-}
-
-#bio ul {
-  margin-top: 30px;
-}
-
-#bio li {
-  display:inline;
-  padding:0 10px;
-}
-
-#bio li:hover {
-  font-size: 18px;
 }

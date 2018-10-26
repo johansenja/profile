@@ -1,22 +1,15 @@
 /* Your card CSS code here */
-.cards{
-  display: flex;
-  flex-wrap: wrap;
-}
-
 .card {
-  width:400px;
-  height: 300px;
   background-size: cover;
   background-repeat: no-repeat;
   box-shadow: 2px 2px 3px rgba(0,0,0,0.3);
-  margin:5px;
+  margin:2px;
 }
 
 .card:hover {
   margin:2px;
   box-shadow: 3px 3px 4px rgba(0,0,0,0.5);
-  cursor: pointer;
+  /*cursor: pointer;*/
 }
 
 .card-text-bar {

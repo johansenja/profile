@@ -1,0 +1,54 @@
+.page-content {
+  margin-top: 65px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 50% 1fr 1fr 1fr;
+  grid-template-rows: 25% 30% 20% 25%;
+}
+
+#bio {
+  grid-column: 1 / span 1;
+  grid-row: 1/ span 2;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#bio ul {
+  margin-top: 30px;
+}
+
+#bio li {
+  display:inline;
+  padding:0 10px;
+}
+
+#bio li:hover {
+  font-size: 18px;
+}
+
+#profile-header {
+  grid-row: 1 / span 1;
+  grid-column: 4 /span 1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#tech {
+  grid-row: 4 / span 1
+  grid-column: 1 / span 1;
+}
+
+.page-content h2 {
+  grid-row: 2 /span 1;
+  grid-column: 2 / span 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
