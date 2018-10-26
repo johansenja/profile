@@ -7,7 +7,7 @@
     <meta name="msapplication-TileImage" content="images/icons.ico/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
-    <link href="https://fonts.googleapis.com/css?family=Krub|Slabo+27px" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Slabo+27px" rel="stylesheet">
     <meta property="og:title" content="Joseph Johansen | Ruby on Rails developer" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -42,12 +42,17 @@
       </a>
     </div>
 
-    <div class="container">
+    <!-- <div class="container"> -->
       <div class="page-content">
         <div class="cards">
+
+            <div class="card" id="profile-header" style="background-image: linear-gradient(0deg, rgba(20,20,20,0.8) 0%, rgba(0,0,0,0.1) 50%), url(images/profile.png)">
+              <h1>Joseph Johansen</h1>
+            </div>
+
             <div class="card" id="bio">
               <h2>Programmer at Le Wagon</h2>
-              <p>I have just finished a Classics degree at University and I am looking for a slight change in direction going into the working world. I hope to use my skills from Le Wagon to get into a programming role within the next few months!
+              <p>I have just finished a Classics degree at Durham University and I am looking for a slight change in direction going into the working world. I hope to use my skills from Le Wagon to get into a programming role within the next few months!
               </p>
               <ul>
                 <li><a href="https://www.facebook.com/johansen1996"><i class="fab fa-facebook-f"></i> Facebook</a></li>
@@ -55,16 +60,6 @@
                 <li><a href="https://www.linkedin.com/in/joseph-johansen-543537154/"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
                 <li><a href="https://github.com/johansenja"><i class="fab fa-github"></i> GitHub</a></li>
               </ul>
-            </div>
-
-            <div class="card" id="profile-header" style="background-image: url(images/profile.png)">
-              <div class="card-text-bar">
-                <h1>Joseph Johansen</h1>
-              </div>
-            </div>
-
-            <div class="card">
-
             </div>
 
             <div class="card" id="tech">
@@ -114,32 +109,45 @@
               </div>
             </div>
 
-              <h2>Photography by Me</h2>
-              <div class="photography-image card" id="img-1">
-                <img src="images/dogs.jpg" alt="two dogs playing">
-              </div>
-              <div class="photography-image card" id="img-2">
-                <img src="images/drone.jpg" alt="drone photography">
-              </div>
-              <div class="photography-image card" id="img-3">
-                <img src="images/hibiscus.jpg" alt="red hibiscus in tbilisi">
-              </div>
-              <div class="photography-image card" id="img-4">
-              </div>
-              <div class="photography-image card" id="img-5">
-                <img src="images/sport.JPG" alt="rowing boat from overhead">
-              </div>
-              <div class="photography-image card" id="img-6">
-                <img src="images/drone2.jpg" alt="tea production from overhead">
+              <div class="my-photos">
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                  <div class="photography-image card" id="img-1">
+                    <img src="images/dogs.jpg" alt="two dogs playing">
+                  </div>
+                  <div class="photography-image card" id="img-4">
+                    <img src="images/portaits.JPG" alt="two rowers before a big race">
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                  <div class="photography-image card" id="img-2">
+                    <img src="images/drone.jpg" alt="drone photography">
+                  </div>
+                  <div class="photography-image card" id="img-5">
+                    <img src="images/sport.JPG" alt="rowing boat from overhead">
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                  <div class="photography-image card" id="img-3">
+                    <img src="images/hibiscus.jpg" alt="red hibiscus in tbilisi">
+                  </div>
+                  <div class="photography-image card" id="img-6">
+                    <img src="images/drone2.jpg" alt="tea production from overhead">
+                  </div>
+                </div>
               </div>
 
-            <div class="card" id="footer">
-              <h2>About this page</h2>
-              <p>I coded this page during the <a href="https://www.lewagon.com/">FullStack program</a> at Le Wagon. It has probably been the best experience of my entire life.</p>
+            <div class="card" id="education">
+              <h2>Education</h2>
+              <ul class="text-center">
+                <li>The Dragon School 2004-9</li>
+                <li>Winchester College 2009-14</li>
+                <li>Durham University 2015-18</li>
+                <li>Le Wagon Autumn 2018</li>
+              </ul>
             </div>
         </div>
       </div>
-    </div>
+    <!-- </div> -->
   </body>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

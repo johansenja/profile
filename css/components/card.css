@@ -12,65 +12,12 @@
   /*cursor: pointer;*/
 }
 
-.card-text-bar {
-  background-color: #f9f8ed;
+.card h1 {
   position:relative;
-  width:80%;
-  height:15%;
+  color: rgb(230,230,230);
+  font-size: 50px;
   top: 40%;
-  box-shadow: 2px 2px 3px rgba(0,0,0,0.5);
-  font-family: 'Varela Round', sans-serif;
+  text-shadow: 2px 2px 3px rgba(0,0,0,0.5);
+  font-family: 'Montserrat', sans-serif;
 }
-
-.card-user {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position:absolute;
-  top:-50%;
-  right:5%;
-}
-
-p.card-username {
-  margin-top: 3px;
-  color:rgb(100,100,100);
-  font-size:12px;
-  font-weight: bold
-}
-
-.card-main {
-  display:flex;
-  flex-direction: column;
-  margin-left: 1%
-}
-
-.card-main * {
-  margin:0;
-  color:rgb(100,100,100);
-  font-family: 'Varela Round', sans-serif;
-
-}
-
-.card-main p {
-  font-size:11px;
-  margin-top: 3px;
-}
-
-.card-description {
-  max-width: 75%
-}
-
-.card-top-layer {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  margin: 5px;
-}
-
-.card-top-layer * {
-  color: rgba(230,230,230,0.7);
-  font-weight: bold;
-}
-
 
