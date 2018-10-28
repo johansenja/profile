@@ -1,5 +1,4 @@
 .photography-image {
-  box-shadow: 2px 2px 1px rgba(0,0,0,0.1);
   margin: 10px 0;
   background-color: #f9f6ef;
   color: rgb(100,100,100);
@@ -8,13 +7,12 @@
 }
 
 .photography-image img {
-  border:2px solid rgba(0,0,0,0.2);
   position:relative;
   width:100%;
 }
 
-.photography-image img:hover {
-  border-bottom: none;
+.photography-image.card:hover  {
+  margin: 2px 0px;
 }
 
 #img-1:hover:after {
@@ -39,4 +37,16 @@ content: "Sport: rowers from above";
 
 #img-6:hover:after {
 content: "Drone practical applications: farm land surveillance";
+}
+
+#img-7:hover:after {
+  content: "Still life: A wild flower in the Caucasus";
+}
+
+#img-8:hover:after {
+  content: "Travel: The Shah mosque in Isfahan, Iran";
+}
+
+#img-9:hover:after {
+  content: "Nature: A bumble bee feeding from an artichoke flower, Devon";
 }

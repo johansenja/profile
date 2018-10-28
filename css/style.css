@@ -12,11 +12,16 @@
 
 body {
   margin: 0;
-  font-family: 'Slabo 27px', serif;
+  font-family: 'Slabo 27px', sans-serif;
 }
 h2, h3 {
-  font-family: 'Slabo 27px', serif;
+  font-family: 'Slabo 27px', sans-serif;
 }
+
+h2 {
+  font-size: 50px;
+}
+
 a {
   text-decoration: none !important;
 }
@@ -24,8 +29,4 @@ a {
 h1 {
   font-family: 'Krub', sans-serif;
   margin:0;
-}
-
-.text-center {
-  text-align: center;
 }

@@ -4,11 +4,12 @@
   background-repeat: no-repeat;
   box-shadow: 2px 2px 3px rgba(0,0,0,0.3);
   margin:2px;
+  background-color: rgb(245,245,245);
 }
 
 .card:hover {
   margin:2px;
-  box-shadow: 3px 3px 4px rgba(0,0,0,0.5);
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
   /*cursor: pointer;*/
 }
 
