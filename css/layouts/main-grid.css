@@ -1,5 +1,5 @@
 .page-content {
-  margin-top: 65px;
+  margin-top: 50px;
 }
 
 .cards {
@@ -10,7 +10,7 @@
 
 #bio {
   grid-column: 2 / span 3;
-  grid-row: 1/ span 1;
+  grid-row: 1/ span 2;
   padding: 15px;
   display: flex;
   align-items: center;
@@ -33,7 +33,7 @@
 
 #profile-header {
   grid-row: 1 / span 2;
-  grid-column: 1 /span ;
+  grid-column: 1 /span 1;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -41,8 +41,8 @@
 }
 
 #tech {
-  grid-row: 2 / span 1;
-  grid-column: 2 / span 3;
+  grid-row: 3 / span 3;
+  grid-column: 1 / span 2;
 }
 
 .page-content h2 {
@@ -64,18 +64,15 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  grid-row: 3 / span 1;
-  grid-column: 1 / span 1;
+  grid-row: 3 / span 2;
+  grid-column: 3 / span 2;
 }
 
 #education li {
   display: block;
 }
 
-.card-title {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  grid-row:3 / span 1;
-  grid-column: 2 / span 3;
+#standalone-title {
+  float: right;
+  margin: 20px;
 }
