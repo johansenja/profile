@@ -67,3 +67,22 @@ a:hover {
   h2 { font-size: 40px }
   p { font-size: 24px; }
 }
+
+
+/*Styles for fullscreen photos*/
+
+.nocards {
+  display: none !important;
+}
+
+.nogrid {
+  display: block !important;
+}
+
+.full-size {
+  height: 100vh !important;
+  width: 100vw !important;
+  z-index: 50;
+  transition: 0.7s ease !important;
+}
+
