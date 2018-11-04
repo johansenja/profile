@@ -2,6 +2,7 @@
 @import url("components/card.css");
 @import url("components/carousel.css");
 @import url("components/footer.css");
+@import url("components/obscurer.css");
 @import url("layouts/main-grid.css");
 
 body {
@@ -73,6 +74,7 @@ a:hover {
 
 .nocards {
   display: none !important;
+  transition: 0.5s ease;
 }
 
 .nogrid {
@@ -84,5 +86,9 @@ a:hover {
   width: 100vw !important;
   z-index: 50;
   transition: 0.7s ease !important;
+}
+
+.darken {
+  filter: brightness(50%);
 }
 
