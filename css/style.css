@@ -2,8 +2,8 @@
 @import url("components/card.css");
 @import url("components/carousel.css");
 @import url("components/footer.css");
-@import url("components/obscurer.css");
 @import url("layouts/main-grid.css");
+@import url("layouts/extra-grid.css");
 
 body {
   margin: 0;
@@ -90,5 +90,25 @@ a:hover {
 
 .darken {
   filter: brightness(50%);
+}
+
+.tech-translate {
+  transition: 1s ease;
+  transform: translate(-30vw, 0);
+}
+
+.education-translate {
+  transition: 1s ease;
+  transform: translate(-30vw, -30vh);
+}
+
+.hobbies-translate {
+  transition: 1s ease;
+  transform: translate(0, -30vh);
+}
+
+.under-construction-display {
+  display: flex !important;
+  transition: 1s ease;
 }
 

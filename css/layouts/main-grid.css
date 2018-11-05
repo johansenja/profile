@@ -33,6 +33,10 @@
   justify-content: space-around;
 }
 
+#bio:hover {
+  margin:1px;
+}
+
 #bio .socials {
   margin-top: 1vh;
   font-size: 32px;
@@ -63,6 +67,7 @@
 
 #tech:hover {
   color: #f7c009;
+  cursor: pointer;
 }
 
 #my-photos {
