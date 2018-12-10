@@ -1,8 +1,9 @@
 .cards {
-  display: grid;
+  display: flex;
+  /*display: grid;
   grid-template-columns: 50% 1fr 1fr 1fr;
-  grid-template-rows: 10% 25% 10% 20% 35%;
-  height: 100vh;
+  grid-template-rows: 10% 25% 10% 20% 35%;*/
+  /*height: 100vh;*/
   transition: 0.3s ease;
 }
 
@@ -24,17 +25,14 @@
 }
 
 #bio {
-  grid-column: 2 / span 3;
-  grid-row: 1/ span 2;
-  padding: 0 24px;
+  /*grid-column: 2 / span 3;
+  grid-row: 1/ span 2;*/
+  flex: 1 0 auto;
+  margin-right: 100px;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: space-around;
-}
-
-#bio:hover {
-  margin:1px;
 }
 
 #bio .socials {
@@ -52,8 +50,10 @@
 }
 
 #profile-header {
-  grid-row: 1 / span 2;
-  grid-column: 1 /span 1;
+  /*grid-row: 1 / span 2;
+  grid-column: 1 /span 1;*/
+  flex: 1 0 auto;
+  margin: 0 100px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -61,8 +61,10 @@
 }
 
 #tech {
-  grid-row: 3 / span 2;
-  grid-column: 2 / span 3;
+  /*grid-row: 3 / span 2;
+  grid-column: 2 / span 3;*/
+  flex: 1 0 auto;
+  margin: 0 100px;
 }
 
 #tech:hover {
@@ -71,16 +73,18 @@
 }
 
 #my-photos {
-  grid-column:1 / span 1;
-  grid-row: 4 / span 2;
+  /*grid-column:1 / span 1;
+  grid-row: 4 / span 2;*/
 }
 
 #education {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  grid-row: 5 / span 1;
-  grid-column: 3 / span 2;
+  flex: 1 0 auto;
+  margin: 0 100px;
+  /*grid-row: 5 / span 1;
+  grid-column: 3 / span 2;*/
 }
 
 #education:hover {
@@ -96,8 +100,10 @@
 }
 
 #my-photography-title {
-  grid-column: 1 / span 1;
-  grid-row: 3 / span 1;
+  /*grid-column: 1 / span 1;
+  grid-row: 3 / span 1;*/
+  flex: 1 0 auto;
+  margin: 0 100px;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -105,11 +111,21 @@
 
 #my-other-hobbies {
   text-align: center;
-  grid-row: 5 / span 1;
-  grid-column: 2 / span 1;
+  flex: 1 0 auto;
+  margin: 0 100px;
+  /*grid-row: 5 / span 1;
+  grid-column: 2 / span 1;*/
 }
 
 #my-other-hobbies:hover {
   color: #f7c009;
   cursor: pointer;
+}
+
+#get-in-touch {
+  height: 150px;
+  width: 50vh;
+  transform: rotate(270deg) translateX(-100%) translateX(-50vh);
+  transform-origin: top left;
+  background-color:#508AA8;
 }
