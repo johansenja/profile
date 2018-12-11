@@ -31,36 +31,3 @@ cross.addEventListener('click', (event) => {
     underConstruction.classList.toggle('under-construction-display')
   }
 });
-
-tech.addEventListener('click', (event) => {
-  event.preventDefault();
-  cross.style.display = "block";
-  underConstruction.classList.toggle('under-construction-display')
-  darken();
-  // underConstruction.style.ditogglesplay = "block"
-  underConstruction.style.top = "50%"
-  underConstruction.style.right = "15%"
-  page.classList.toggle('tech-translate');
-});
-
-education.addEventListener('click', (event) => {
-  event.preventDefault();
-  cross.style.display = "block";
-  underConstruction.classList.toggle('under-construction-display')
-  darken();
-  // underConstruction.style.display = "block"
-  underConstruction.style.bottom = "-15%"
-  underConstruction.style.right = "15%"
-  page.classList.toggle('education-translate');
-});
-
-hobbies.addEventListener('click', (event) => {
-  event.preventDefault();
-  cross.style.display = "block";
-  underConstruction.classList.toggle('under-construction-display')
-  darken();
-  // underConstruction.style.display = "block"
-  underConstruction.style.bottom = "-30%"
-  underConstruction.style.left = "50%"
-  page.classList.toggle('hobbies-translate');
-});
