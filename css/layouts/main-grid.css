@@ -1,3 +1,11 @@
+.line svg {
+  margin-top: 30px;
+}
+
+.line path {
+  fill: rgb(69, 98, 119);
+}
+
 .cards {
   display: flex;
   /*display: grid;
@@ -25,59 +33,29 @@
 }
 
 #bio {
-  flex: 1 0 auto;
-  margin-right: 100px;
-  display: flex;
-  align-items: center;
   flex-direction: column;
-  justify-content: space-around;
-  max-width: 300px;
-  margin: 10px;
-  padding: 10px;
-  color: rgb(69, 98, 119);
-  background-color: #FFFFE7;
-}
-
-#bio .socials {
-  margin-top: 1vh;
-  font-size: 32px;
-}
-
-#bio .socials li {
-  display:inline;
-  padding:0 10px;
+  transform: rotate(4deg) translateX(5vw) translateY(10vh);
+  transform-origin: center;
 }
 
 #bio p {
   width: 75%;
 }
 
-#bio img {
-  width: 280px;
-  height: 280px;
-  object-fit: cover;
-}
-
-#bio h1,h3 {
+#bio h1,h2 {
   margin: 0;
 }
 
-#profile-header {
-  /*grid-row: 1 / span 2;
-  grid-column: 1 /span 1;*/
-  flex: 1 0 auto;
-  margin: 0 100px;
-  display: flex;
-  align-items: center;
+#description {
   flex-direction: column;
-  justify-content: space-around;
+  transform: rotate(359deg) translateX(2vw) translateY(5vh);
+  transform-origin: center;
 }
 
 #tech {
-  /*grid-row: 3 / span 2;
-  grid-column: 2 / span 3;*/
-  flex: 1 0 auto;
-  margin: 0 100px;
+  height: 150px;
+  transform: rotate(8deg) translateX(2vw) translateY(25vh);
+  transform-origin: center;
 }
 
 #tech:hover {
@@ -86,25 +64,27 @@
 }
 
 #my-photos {
-  /*grid-column:1 / span 1;
-  grid-row: 4 / span 2;*/
+  max-width: none;
+  transform: rotate(358deg) translateX(1vw) translateY(10vh);
+  transform-origin: center;
+}
+
+#my-photos h3 {
+  margin: 5px 0 0 0;
 }
 
 #education {
-  display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  flex: 1 0 auto;
-  margin: 0 100px;
-  /*grid-row: 5 / span 1;
-  grid-column: 3 / span 2;*/
+  height: 250px;
+  transform: rotate(1deg) translateX(1vw) translateY(15vh);
+  transform-origin: center;
 }
 
 #education:hover {
   cursor: pointer;
 }
 
-#education:hover h2 {
+#education:hover h3 {
   color: #f7c009;
 }
 
@@ -112,22 +92,10 @@
   display: block;
 }
 
-#my-photography-title {
-  /*grid-column: 1 / span 1;
-  grid-row: 3 / span 1;*/
-  flex: 1 0 auto;
-  margin: 0 100px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-
 #my-other-hobbies {
   text-align: center;
-  flex: 1 0 auto;
-  margin: 0 100px;
-  /*grid-row: 5 / span 1;
-  grid-column: 2 / span 1;*/
+  transform: rotate(355deg) translateX(1vw) translateY(20vh);
+  transform-origin: center;
 }
 
 #my-other-hobbies:hover {
@@ -136,9 +104,20 @@
 }
 
 #get-in-touch {
+  flex-direction: column;
   height: 150px;
   width: 50vh;
-  transform: rotate(270deg) translateX(-100%) translateX(-50vh);
-  transform-origin: top left;
-  background-color:#508AA8;
+  transform: rotate(353deg) translateX(-5vw) translateY(25vh);
+  transform-origin: center;
+  box-shadow: -50px 35px 100px rgba(0,0,0,0.3);
+}
+
+#get-in-touch .socials {
+  margin-top: 1vh;
+  font-size: 32px;
+}
+
+#get-in-touch .socials li {
+  display:inline;
+  padding:0 10px;
 }
