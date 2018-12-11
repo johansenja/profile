@@ -1,0 +1,21 @@
+.outside {
+  display: inline;
+}
+
+#close {
+  display:none;
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  cursor: pointer;
+  font-size: 40px;
+  z-index: 300;
+}
+
+#under-construction {
+  display: none;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  z-index: 100;
+}

@@ -1,0 +1,52 @@
+.photography-image {
+  margin: 10px 0;
+  background-color: #f9f6ef;
+  color: rgb(100,100,100);
+  height:auto !important;
+  max-width: 600px !important;
+}
+
+.photography-image img {
+  position:relative;
+  width:100%;
+}
+
+.photography-image.card:hover  {
+  margin: 2px 0px;
+}
+
+#img-1:hover:after {
+content: "Action: My dogs playing together";
+}
+
+#img-2:hover:after {
+content: "Drone: Me in the river Wear in Durham";
+}
+
+#img-3:hover:after {
+content: "Still Life: A Hibiscus flower in a church garden in Tbilisi";
+}
+
+#img-4:hover:after {
+content: "Portraits: Two rowers before the start of a big race";
+}
+
+#img-5:hover:after {
+content: "Sport: rowers from above";
+}
+
+#img-6:hover:after {
+content: "Drone practical applications: farm land surveillance";
+}
+
+#img-7:hover:after {
+  content: "Still life: A wild flower in the Caucasus";
+}
+
+#img-8:hover:after {
+  content: "Travel: The Shah mosque in Isfahan, Iran";
+}
+
+#img-9:hover:after {
+  content: "Nature: A bumble bee feeding from an artichoke flower, Devon";
+}

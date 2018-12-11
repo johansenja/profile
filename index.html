@@ -1,53 +1,132 @@
 <html>
   <head>
     <title>Joseph Johansen</title>
+    <link rel="icon" href="images/favicon.ico">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
-    <link href="https://fonts.googleapis.com/css?family=Rubik|Slabo+27px" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Slabo+27px" rel="stylesheet">
+    <meta property="og:title" content="Joseph Johansen | Ruby on Rails developer" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body>
-    <div class="container">
-      <div class="card profile-header">
-          <img src="images/profile.png" alt="graduation" class="avatar">
-          <h1>Joseph Johansen</h1>
+    <div id="under-construction">
+      <p>Under Construction</p>
+    </div>
+    <i class="fas fa-times" id="close"></i>
+    <div class="page-content">
+      <div class="cards">
+
+        <div class="card" id="profile-header" style="background-image: /*linear-gradient(0deg, rgba(20,20,20,0.8) 0%, rgba(0,0,0,0.1) 50%),*/ url(images/harbour.jpg); background-position: center;">
         </div>
-        <div class="card bio">
-          <h2>Programmer at Le Wagon</h2>
-          <p>I have just finished a Classics degree at University and I am looking for a slight change in direction going into the working world. I hope to use my skills from Le Wagon to get into a programming role within the next few months!
+
+        <div class="card" id="bio">
+          <img src="images/harbour.jpg" alt="" class="avatar">
+          <h1>Joseph Johansen</h1>
+          <h2>Developer in training at Le Wagon</h2>
+          <p>I have just finished a Classics degree at Durham University and I am looking for a change in direction going into the working world. I hope to use my skills learnt at Le Wagon to find a role as a developer within the next few months.
           </p>
-          <br>
-          <a href="#" class="btn btn-red">See for yourself</a>
-          <br>
-          <br>
-          <ul>
-            <li><a href="https://www.facebook.com/johansen1996"><i class="fab fa-facebook-f"></i> Facebook</a></li>
-            <li><a href="https://www.instagram.com/j_jhnsn/"><i class="fab fa-instagram"></i> Instagram</a></li>
-            <li><a href="https://www.linkedin.com/in/joseph-johansen-543537154/"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
-            <li><a href="https://github.com/johansenja"><i class="fab fa-github"></i> GitHub</a></li>
+          <ul class="socials">
+            <li><a href="https://github.com/johansenja"><i class="fab fa-github"></i></a></li>
+            <li><a href="https://www.instagram.com/j_jhnsn/"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/joseph-johansen-543537154/"><i class="fab fa-linkedin"></i></a></li>
           </ul>
         </div>
 
-        <div class="card">
-          <h2>My favourite movies</h2>
-            <table>
-              <tr>
-                <td><img src="images/Twenty_two_jump_street.jpg" alt="22 Jump Street movie poster"></td>
-                <td>22 Jump Street</td>
-                <td>my name jeff</td>
-              </tr>
-              <tr>
-                <td><img src="images/bttf.jpg" alt="Back to the Future movie poster"></td>
-                <td>Back to the Future</td>
-                <td>Marty and Doc go back to 1955</td>
-              </tr>
-            </table>
+        <div class="card" id="tech">
+          <a href=""><h2>My Projects & Tech Skills</h2></a>
+        </div>
+        <div class="card" id="education">
+          <h2>Education</h2>
+          <ul class="text-center">
+            <li>The Dragon School 2004-9</li>
+
+            <li>Winchester College 2009-14</li>
+            <li>Durham University 2015-18</li>
+            <li>Le Wagon Autumn 2018</li>
+          </ul>
         </div>
 
-        <div class="card">
-          <h2>About this page</h2>
-            <p>I coded this page during the <a href="https://www.lewagon.com/">FullStack program</a> at Le Wagon. It has probably been the best experience of my entire life.</p>
+        <div class="card" id="my-photography-title">
+          <h2>My photography</h2>
+        </div>
+        <div id="my-photos">
+          <div id="main-carousel" class="carousel slide" data-ride="carousel" data-interval="5000">
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+              <div class="item active">
+                <div class="inner-wrapper" style="background-image: url(images/dogs.jpg);">
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="inner-wrapper" style="background-image: url(images/kazbegi-flower.jpg);">
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="inner-wrapper" style="background-image: url(images/drone.jpg);">
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="inner-wrapper" style="background-image: url(images/iran.jpg);">
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="inner-wrapper" style="background-image: url(images/bee.jpg);">
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="inner-wrapper" style="background-image: url(images/hibiscus.jpg);">
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="inner-wrapper" style="background-image: url(images/portaits.JPG);">
+                </div>
+              </div>
+              <div class="item">
+                <div class="inner-wrapper" style="background-image: url(images/sport.JPG);">
+                </div>
+              </div>
+              <div class="item">
+                <div class="inner-wrapper" style="background-image: url(images/drone2.jpg);">
+                </div>
+              </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+        <div class="card" id="my-other-hobbies">
+          <h2>Other Hobbies</h2>
         </div>
       </div>
+    </div>
+    <!-- <div class="outside">
+      <p>Under Construction</p>
+    </div>
+ -->    <div class="footer">
+      <ul class="list-inline">
+        <li><a href="https://github.com/johansenja"><i class="fab fa-github"></i></a></li>
+        <li><a href="https://www.instagram.com/j_jhnsn/"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/joseph-johansen-543537154/"><i class="fab fa-linkedin"></i></a></li>
+      </ul>
+    </div>
   </body>
+  <script src='js/carousel.js'></script>
+  <script src='js/newpage.js'></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </html>

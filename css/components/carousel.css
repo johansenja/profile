@@ -1,0 +1,45 @@
+.item .inner-wrapper {
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 50vw;
+  height: 55vh;
+  transition: 1.5s ease;
+}
+
+@media (max-width: 960px) {
+  .item .inner-wrapper {
+    width: 100vw;
+  }
+}
+
+.carousel-control {
+  background: rgba(0,0,0,0) !important;
+  display: none;
+}
+
+.glyphicon {
+  color: inherit;
+  mix-blend-mode: difference !important;
+}
+
+.fullscreen {
+  text-align: right;
+  position: fixed;
+  display: none;
+  top: 5%;
+  right: 5%;
+  z-index: 99;
+  font-size: 40px;
+  opacity: 50%;
+  mix-blend-mode: difference;
+  cursor: pointer;
+}
+
+.fullscreen:hover {
+  opacity: 1;
+}
+
+.item.active .fullscreen {
+  display: block;
+}

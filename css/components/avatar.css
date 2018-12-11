@@ -1,0 +1,14 @@
+.avatar {
+  border-radius: 50%;
+  width:80px;
+  height:80px;
+  object-fit: fill;
+  display: none;
+  margin-top: 10px
+}
+
+@media (max-width: 600px) {
+  .avatar {
+    display: inline-block;
+  }
+}

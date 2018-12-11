@@ -1,0 +1,114 @@
+@import url("components/avatar.css");
+@import url("components/card.css");
+@import url("components/carousel.css");
+@import url("components/footer.css");
+@import url("layouts/main-grid.css");
+@import url("layouts/extra-grid.css");
+
+body {
+  margin: 0;
+  font-family: 'Slabo 27px', sans-serif;
+  color: rgb(230,230,230);
+  background-color: rgb(51, 73, 89);
+}
+
+h1 {
+  font-size: 48px;
+  color: rgb(230,230,230);
+  margin-top:20px;
+  text-shadow: 2px 2px 3px rgba(0,0,0,0.5);
+  font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+  font-size: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+ul {
+  padding-left: 0;
+}
+
+a {
+  text-decoration: none !important;
+  color: inherit;
+}
+
+a:hover {
+  color: #f7c009;
+}
+
+@media (max-width: 960px), (max-height: 750px) {
+  h1 {
+    font-size: 30px;
+    margin-bottom: 3px;
+  }
+
+  h2 {
+    font-size: 24px !important;
+  }
+
+  .footer {
+    display: flex;
+  }
+
+  #bio p {
+    margin-top: 5px;
+  }
+
+  .socials {
+    margin-top: 0px !important;
+    display: none;
+  }
+}
+
+@media (min-width: 1800px) {
+  h2 { font-size: 40px }
+  p { font-size: 24px; }
+}
+
+
+/*Styles for fullscreen photos*/
+
+.nocards {
+  display: none !important;
+  transition: 0.5s ease;
+}
+
+.nogrid {
+  display: block !important;
+}
+
+.full-size {
+  height: 100vh !important;
+  width: 100vw !important;
+  z-index: 50;
+  transition: 0.7s ease !important;
+}
+
+.darken {
+  filter: brightness(50%);
+}
+
+.tech-translate {
+  transition: 1s ease;
+  transform: translate(-30vw, 0);
+}
+
+.education-translate {
+  transition: 1s ease;
+  transform: translate(-30vw, -30vh);
+}
+
+.hobbies-translate {
+  transition: 1s ease;
+  transform: translate(0, -30vh);
+}
+
+.under-construction-display {
+  display: flex !important;
+  transition: 1s ease;
+}
+
