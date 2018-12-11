@@ -25,14 +25,17 @@
 }
 
 #bio {
-  /*grid-column: 2 / span 3;
-  grid-row: 1/ span 2;*/
   flex: 1 0 auto;
   margin-right: 100px;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: space-around;
+  max-width: 300px;
+  margin: 10px;
+  padding: 10px;
+  color: rgb(69, 98, 119);
+  background-color: #FFFFE7;
 }
 
 #bio .socials {
@@ -47,6 +50,16 @@
 
 #bio p {
   width: 75%;
+}
+
+#bio img {
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+}
+
+#bio h1,h3 {
+  margin: 0;
 }
 
 #profile-header {

@@ -9,22 +9,9 @@
   align-items: center;
   justify-content: space-around;
   /*max-height: 50vh;*/
+  filter: custom(url(shaders/vertex/warp.vs) mix(url(shaders/fragment/warp.fs) normal source-atop), 20 20 border-box, k array(-0.429, -0.471, 467, -0.286, -0.507, 0, -0.086, -0.507, 0, 0.15, -0.514, 0, -0.407, -0.086, 0, -0.021, -0.171, 0, 0.193, -0.171, 0, 0.364, -0.171, 0, 0.036, 0.179, 0, 0.179, 0.171, 0, 0.35, 0.179, 0, 0.464, 0.171, 0, 0.2, 0.5, 0, 0.279, 0.5, 0, 0.414, 0.493, 0, 0.5, 0.5, 0), matrix perspective(1000) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg), useColoredBack 1, backColor 1 1 1 1);
 }
 
 .card:hover {
   box-shadow: 1px 1px 1px rgba(0,0,0,0.3);
-}
-
-.mini-card {
-  max-width: 300px;
-  margin: 10px;
-  padding: 10px;
-  color: rgb(69, 98, 119);
-}
-
-.mini-card img {
-  width: 250px;
-  height: 250px;
-  object-fit: cover;
-  border-radius: 50%;
 }
