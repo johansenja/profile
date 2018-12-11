@@ -96,6 +96,7 @@
   text-align: center;
   transform: rotate(355deg) translateX(1vw) translateY(20vh);
   transform-origin: center;
+  height: 125px;
 }
 
 #my-other-hobbies:hover {
