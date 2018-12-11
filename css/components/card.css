@@ -1,25 +1,16 @@
 .card {
-  flex: 1 0 auto;
-  box-shadow: 50px 35px 100px rgba(0,0,0,0.3);
-  background-color:#508AA8;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 3px rgba(0,0,0,0.3);
+  margin:1px;
+  background-color:rgb(69, 98, 119);
   display: flex;
   align-items: center;
   justify-content: space-around;
-  max-width: 300px;
-  margin: 10px;
-  margin-right: 100px;
-  padding: 10px;
-  color: rgb(69, 98, 119);
-  background-color: #FFFFE7;
-  filter: sepia(0.2);
 }
 
-.card img {
-  width: 280px;
-  height: 280px;
-  object-fit: cover;
-}
-
-/*.card:hover {
+.card:hover {
+  margin:0;
   box-shadow: 1px 1px 1px rgba(0,0,0,0.3);
-}*/
+}
+

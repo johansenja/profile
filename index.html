@@ -3,8 +3,8 @@
     <title>Joseph Johansen</title>
     <link rel="icon" href="images/favicon.ico">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
-    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Rock+Salt|Ubuntu" rel="stylesheet">
-    <meta property="og:title" content="Joseph Johansen | Full Stack Developer" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Slabo+27px" rel="stylesheet">
+    <meta property="og:title" content="Joseph Johansen | Ruby on Rails developer" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -15,24 +15,29 @@
     </div>
     <i class="fas fa-times" id="close"></i>
     <div class="page-content">
-      <div class="line"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet" viewBox="-1 10.699571887313775 4965 38.79165618286178" width="3500" height="34.79"><defs><path d="M4961 25C4792.89 32.78 4692.2 32.55 4658.93 24.33C4609.02 12 4039.14 27.49 3972.98 34.23C3850.46 46.7 2689.04 36.61 2520.29 25C2175.9 1.32 2259.86 13.6 1955.39 35.53C1752.41 50.15 1579.19 50.15 1435.74 35.53L1084.84 25C887.36 6.5 691.64 7.3 497.67 27.4C303.71 47.49 137.82 46.69 0 25" id="b3uglUA9qr"></path></defs><g><g><g><use xlink:href="#b3uglUA9qr" opacity="1" fill-opacity="0" stroke="rgb(69, 98, 119)" stroke-width="3" stroke-opacity="1"></use></g></g></g></svg></div>
       <div class="cards">
-        <div class="card text-center" id="bio">
-          <img src="images/bwc.jpg" alt="Black and white profile picture">
-          <h1 class="text-center">Joseph Johansen</h1>
-          <h2>Full Stack Developer</h2>
+
+        <div class="card" id="profile-header" style="background-image: /*linear-gradient(0deg, rgba(20,20,20,0.8) 0%, rgba(0,0,0,0.1) 50%),*/ url(images/harbour.jpg); background-position: center;">
         </div>
 
-        <div class="card" id='description'>
-          <img src="images/profile.png" alt="Me at graduation">
-          <p>I graduated from Durham University with a degree in Classics, before having a change of direction and enrolling in Le Wagon's 9 week bootcamp in Ruby on Rails. I am now on my way to my first job in the tech industry.
+        <div class="card" id="bio">
+          <img src="images/harbour.jpg" alt="" class="avatar">
+          <h1>Joseph Johansen</h1>
+          <h2>Developer in training at Le Wagon</h2>
+          <p>I have just finished a Classics degree at Durham University and I am looking for a change in direction going into the working world. I hope to use my skills learnt at Le Wagon to find a role as a developer within the next few months.
           </p>
+          <ul class="socials">
+            <li><a href="https://github.com/johansenja"><i class="fab fa-github"></i></a></li>
+            <li><a href="https://www.instagram.com/j_jhnsn/"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/joseph-johansen-543537154/"><i class="fab fa-linkedin"></i></a></li>
+          </ul>
         </div>
+
         <div class="card" id="tech">
-          <a href=""><h3>My Projects & Tech Skills</h3></a>
+          <a href=""><h2>My Projects & Tech Skills</h2></a>
         </div>
         <div class="card" id="education">
-          <h3>Education</h3>
+          <h2>Education</h2>
           <ul class="text-center">
             <li>The Dragon School 2004-9</li>
 
@@ -42,11 +47,11 @@
           </ul>
         </div>
 
-        <!-- <div class="card" id="my-photography-title">
+        <div class="card" id="my-photography-title">
           <h2>My photography</h2>
-        </div> -->
-        <div id="my-photos" class="card">
-          <div id="main-carousel" class="carousel slide" data-ride="carousel" data-interval="3000">
+        </div>
+        <div id="my-photos">
+          <div id="main-carousel" class="carousel slide" data-ride="carousel" data-interval="5000">
             <!-- Wrapper for slides -->
             <div class="carousel-inner">
               <div class="item active">
@@ -91,7 +96,6 @@
                 <div class="inner-wrapper" style="background-image: url(images/drone2.jpg);">
                 </div>
               </div>
-              <h3 class="text-center">My photography</h3>
             </div>
 
             <!-- Left and right controls -->
@@ -106,20 +110,14 @@
           </div>
         </div>
         <div class="card" id="my-other-hobbies">
-          <h3>Other Hobbies</h3>
-        </div>
-        <div id='get-in-touch' class="card">
-          <h3>Get in Touch</h3>
-          <ul class="socials">
-            <li><a href="https://github.com/johansenja"><i class="fab fa-github"></i></a></li>
-            <li><a href="https://www.instagram.com/j_jhnsn/"><i class="fab fa-instagram"></i></a></li>
-            <li><a href="https://www.linkedin.com/in/joseph-johansen-543537154/"><i class="fab fa-linkedin"></i></a></li>
-          </ul>
+          <h2>Other Hobbies</h2>
         </div>
       </div>
     </div>
-
-    <div class="footer">
+    <!-- <div class="outside">
+      <p>Under Construction</p>
+    </div>
+ -->    <div class="footer">
       <ul class="list-inline">
         <li><a href="https://github.com/johansenja"><i class="fab fa-github"></i></a></li>
         <li><a href="https://www.instagram.com/j_jhnsn/"><i class="fab fa-instagram"></i></a></li>
@@ -129,7 +127,6 @@
   </body>
   <script src='js/carousel.js'></script>
   <script src='js/newpage.js'></script>
-  <script src='js/scroll.js'></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </html>
