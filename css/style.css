@@ -7,18 +7,12 @@
 
 body {
   margin: 0;
-<<<<<<< HEAD
   font-family: 'Ubuntu', sans-serif;
   color: #E5E7E6;
   background-color: #E5E7E6;
   /*background-color: green;*/
   overflow-y: hidden;
   overflow-x: scroll;
-=======
-  font-family: 'Slabo 27px', sans-serif;
-  color: rgb(230,230,230);
-  background-color: rgb(51, 73, 89);
->>>>>>> master
 }
 
 h1 {

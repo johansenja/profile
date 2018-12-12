@@ -7,7 +7,6 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-<<<<<<< HEAD
   max-width: 300px;
   margin: 10px;
   margin-right: 100px;
@@ -39,12 +38,5 @@
 .knot {
   position: relative;
   top: -25px;
-=======
-}
-
-.card:hover {
-  margin:0;
-  box-shadow: 1px 1px 1px rgba(0,0,0,0.3);
->>>>>>> master
 }
 
