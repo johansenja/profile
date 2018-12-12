@@ -1,6 +1,13 @@
+.line svg {
+  margin-top: 30px;
+}
+
+.line path {
+  fill: rgb(69, 98, 119);
+}
+
 .cards {
   display: flex;
-  height: 100vh;
   transition: 0.3s ease;
 }
 
@@ -22,31 +29,17 @@
 }
 
 #bio {
-  grid-column: 2 / span 3;
-  grid-row: 1/ span 2;
-  padding: 0 24px;
-  display: flex;
-  align-items: center;
   flex-direction: column;
-  justify-content: space-around;
-}
-
-#bio:hover {
-  margin:1px;
-}
-
-#bio .socials {
-  margin-top: 1vh;
-  font-size: 32px;
-}
-
-#bio .socials li {
-  display:inline;
-  padding:0 10px;
+  transform: rotate(4deg) translateX(5vw) translateY(10vh);
+  transform-origin: center;
 }
 
 #bio p {
   width: 75%;
+}
+
+#bio h1,h2 {
+  margin: 0;
 }
 
 #bio .hole {
@@ -56,6 +49,8 @@
 #description {
   flex-direction: column;
   justify-content: space-around;
+  transform: rotate(359deg) translateX(2vw) translateY(5vh);
+  transform-origin: center;
 }
 
 #description .hole {
@@ -98,18 +93,17 @@
 }
 
 #education {
-  display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  grid-row: 5 / span 1;
-  grid-column: 3 / span 2;
+  height: 250px;
+  transform: rotate(1deg) translateX(1vw) translateY(15vh);
+  transform-origin: center;
 }
 
 #education:hover {
   cursor: pointer;
 }
 
-#education:hover h2 {
+#education:hover h3 {
   color: #f7c009;
 }
 
