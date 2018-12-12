@@ -1,17 +1,8 @@
-.line svg {
-  margin-top: 30px;
-}
-
-.line path {
-  fill: rgb(69, 98, 119);
-}
-
 .cards {
-  display: flex;
-  /*display: grid;
+  display: grid;
   grid-template-columns: 50% 1fr 1fr 1fr;
-  grid-template-rows: 10% 25% 10% 20% 35%;*/
-  /*height: 100vh;*/
+  grid-template-rows: 10% 25% 10% 20% 35%;
+  height: 100vh;
   transition: 0.3s ease;
 }
 
@@ -33,27 +24,48 @@
 }
 
 #bio {
+  grid-column: 2 / span 3;
+  grid-row: 1/ span 2;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
   flex-direction: column;
-  transform: rotate(4deg) translateX(5vw) translateY(10vh);
-  transform-origin: center;
+  justify-content: space-around;
+}
+
+#bio:hover {
+  margin:1px;
+}
+
+#bio .socials {
+  margin-top: 1vh;
+  font-size: 32px;
+}
+
+#bio .socials li {
+  display:inline;
+  padding:0 10px;
 }
 
 #bio p {
   width: 75%;
 }
 
-#bio h1,h2 {
-  margin: 0;
-}
-
+<<<<<<< HEAD
 #bio .hole {
   left: -80px;
 }
 
 #description {
+=======
+#profile-header {
+  grid-row: 1 / span 2;
+  grid-column: 1 /span 1;
+  display: flex;
+  align-items: center;
+>>>>>>> master
   flex-direction: column;
-  transform: rotate(359deg) translateX(2vw) translateY(5vh);
-  transform-origin: center;
+  justify-content: space-around;
 }
 
 #description .hole {
@@ -61,6 +73,7 @@
 }
 
 #tech {
+<<<<<<< HEAD
   height: 120px;
   transform: rotate(8deg) translateX(2vw) translateY(25vh);
   transform-origin: center;
@@ -73,6 +86,10 @@
 
 #tech .hole {
   left: -20px;
+=======
+  grid-row: 3 / span 2;
+  grid-column: 2 / span 3;
+>>>>>>> master
 }
 
 #tech:hover {
@@ -81,6 +98,7 @@
 }
 
 #my-photos {
+<<<<<<< HEAD
   max-width: none;
   transform: rotate(358deg) translateX(1vw) translateY(10vh);
   transform-origin: center;
@@ -89,6 +107,10 @@
 
 #my-photos h3 {
   margin: 5px 0 0 0;
+=======
+  grid-column:1 / span 1;
+  grid-row: 4 / span 2;
+>>>>>>> master
 }
 
 #my-photos .hole {
@@ -96,17 +118,18 @@
 }
 
 #education {
+  display: flex;
   flex-direction: column;
-  height: 250px;
-  transform: rotate(1deg) translateX(1vw) translateY(15vh);
-  transform-origin: center;
+  justify-content: space-around;
+  grid-row: 5 / span 1;
+  grid-column: 3 / span 2;
 }
 
 #education:hover {
   cursor: pointer;
 }
 
-#education:hover h3 {
+#education:hover h2 {
   color: #f7c009;
 }
 
@@ -114,12 +137,22 @@
   display: block;
 }
 
+<<<<<<< HEAD
 #education h3 {
   margin: 0;
+=======
+#my-photography-title {
+  grid-column: 1 / span 1;
+  grid-row: 3 / span 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+>>>>>>> master
 }
 
 #my-other-hobbies {
   text-align: center;
+<<<<<<< HEAD
   transform: rotate(355deg) translateX(1vw) translateY(20vh);
   transform-origin: center;
   height: 100px;
@@ -128,12 +161,17 @@
 
 #my-other-hobbies .card {
   right: -15px;
+=======
+  grid-row: 5 / span 1;
+  grid-column: 2 / span 1;
+>>>>>>> master
 }
 
 #my-other-hobbies:hover {
   color: #f7c009;
   cursor: pointer;
 }
+<<<<<<< HEAD
 
 #my-other-hobbies h3 {
   margin: 0;
@@ -161,3 +199,5 @@
   display:inline;
   padding:0 10px;
 }
+=======
+>>>>>>> master

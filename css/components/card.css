@@ -1,10 +1,13 @@
 .card {
-  flex: 1 0 auto;
-  box-shadow: 50px 35px 100px rgba(0,0,0,0.3);
-  background-color:#508AA8;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 3px rgba(0,0,0,0.3);
+  margin:1px;
+  background-color:rgb(69, 98, 119);
   display: flex;
   align-items: center;
   justify-content: space-around;
+<<<<<<< HEAD
   max-width: 300px;
   margin: 10px;
   margin-right: 100px;
@@ -36,8 +39,12 @@
 .knot {
   position: relative;
   top: -25px;
+=======
 }
 
-/*.card:hover {
+.card:hover {
+  margin:0;
   box-shadow: 1px 1px 1px rgba(0,0,0,0.3);
-}*/
+>>>>>>> master
+}
+
