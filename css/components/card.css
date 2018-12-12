@@ -1,9 +1,6 @@
 .card {
-  background-size: cover;
-  background-repeat: no-repeat;
-  box-shadow: 2px 2px 3px rgba(0,0,0,0.3);
-  margin:1px;
-  background-color:rgb(69, 98, 119);
+  flex: 1 0 auto;
+  box-shadow: 50px 35px 100px rgba(0,0,0,0.3);
   display: flex;
   align-items: center;
   justify-content: space-around;
