@@ -17,17 +17,14 @@ body {
 
 h1 {
   font-size: 48px;
-  color: rgb(230,230,230);
-  margin-top:20px;
+  margin-top:10px;
   text-shadow: 2px 2px 3px rgba(0,0,0,0.5);
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Permanent Marker', sans-serif;
 }
 
-h2 {
-  font-size: 32px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+h2, h3 {
+  font-size: 24px;
+  font-family: 'Permanent Marker', sans-serif;
 }
 
 ul {
