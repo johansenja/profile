@@ -35,7 +35,7 @@
 
 #bio {
   flex-direction: column;
-  transform: rotate(4deg) translateX(5vw) translateY(10vh);
+  transform: rotate(4deg) translateX(3.1vw) translateY(18vh);
   transform-origin: center;
 }
 
@@ -54,8 +54,9 @@
 #description {
   flex-direction: column;
   justify-content: space-around;
-  transform: rotate(359deg) translateX(2vw) translateY(5vh);
+  transform: rotate(359deg) translateX(4vw) translateY(14vh);
   transform-origin: center;
+  max-height: 480px;
 }
 
 #description .hole {
@@ -64,9 +65,10 @@
 
 #tech {
   height: 120px;
-  transform: rotate(8deg) translateX(2vw) translateY(25vh);
+  transform: rotate(8deg) translateX(11.25vw) translateY(32vh);
   transform-origin: center;
   flex-direction: column;
+  z-index: -10;
 }
 
 #tech h3 {
@@ -84,7 +86,7 @@
 
 #my-photos {
   max-width: none;
-  transform: rotate(358deg) translateX(1vw) translateY(10vh);
+  transform: rotate(358deg) translateX(-5.75vw) translateY(20vh);
   transform-origin: center;
   flex-direction: column;
 }
@@ -100,8 +102,9 @@
 #education {
   flex-direction: column;
   height: 250px;
-  transform: rotate(1deg) translateX(1vw) translateY(15vh);
+  transform: rotate(1deg) translateX(0.8vw) translateY(23.5vh);
   transform-origin: center;
+  z-index: 5;
 }
 
 #education:hover {
