@@ -10,7 +10,7 @@
   padding: 10px;
   color: rgb(69, 98, 119);
   background-color: #FFFFE7;
-  mix-blend-mode: hard-light;
+  /*mix-blend-mode: hard-light;*/
   filter: sepia(0.25);
 }
 
