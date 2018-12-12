@@ -10,6 +10,7 @@ body {
   font-family: 'Ubuntu', sans-serif;
   color: #E5E7E6;
   background-color: #E5E7E6;
+  /*background-color: green;*/
   overflow-y: hidden;
   overflow-x: scroll;
 }
@@ -37,6 +38,12 @@ a {
 
 a:hover {
   color: #f7c009;
+}
+
+.flex-area {
+  display: flex;
+  justify-content: space-between;
+  width: 100%
 }
 
 @media (max-width: 960px), (max-height: 750px) {
