@@ -1,3 +1,5 @@
+/*Have a single svg for as much as possible - join knots and strings*/
+
 .line {
   position: absolute;
   z-index: 999;
