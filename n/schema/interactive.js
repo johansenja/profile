@@ -35,5 +35,5 @@ interact('.draggable')
     target.setAttribute('data-y', y);
   }
 
-  // this is used later in the resizing and gesture demos
-  window.dragMoveListener = dragMoveListener;
+// this is used later in the resizing and gesture demos
+window.dragMoveListener = dragMoveListener;
