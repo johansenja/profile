@@ -1,0 +1,139 @@
+body {
+  font-family: 'Ubuntu', sans-serif;
+  margin: 0;
+}
+
+table {
+  border: 1px solid rgba(0,0,0,0.1);
+  margin: 10px;
+  border-radius: 5px;
+  background-color: white;
+}
+
+tr td {
+  border: 1px solid rgba(0,0,0,0.1);
+}
+
+tr th, .header {
+  background-color: rgb(66, 67, 62);
+  color: rgb(255, 254, 236);
+}
+
+form {
+  margin-bottom: 0;
+}
+
+#header, #paste-schema {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#header {
+  height: 10vh;
+}
+
+#textBox {
+  height: 80%;
+}
+
+#paste-schema * {
+  margin: 10px;
+}
+
+.schema-area {
+  min-height: 90vh;
+  min-width: 100vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background:
+    linear-gradient(-90deg, rgba(0,0,0,.05) 1px, transparent 1px),
+    linear-gradient(rgba(0,0,0,.05) 1px, transparent 1px),
+    linear-gradient(-90deg, rgba(0, 0, 0, .04) 1px, transparent 1px),
+    linear-gradient(rgba(0,0,0,.04) 1px, transparent 1px),
+    linear-gradient(transparent 3px, #fff 3px, #fff 78px, transparent 78px),
+    linear-gradient(-90deg, #ccc 1px, transparent 1px),
+    linear-gradient(-90deg, transparent 3px, #fff 3px, #fff 78px, transparent 78px),
+    linear-gradient(#ccc 1px, transparent 1px),
+    #fff;
+  background-size:
+    8px 8px,
+    8px 8px,
+    80px 80px,
+    80px 80px,
+    80px 80px,
+    80px 80px,
+    80px 80px,
+    80px 80px;
+}
+
+.key {
+  position: fixed;
+  left: 3vw;
+  bottom: 3vw;
+  background-color: white;
+  opacity: 70%;
+}
+
+.key * {
+  padding: 3px;
+}
+
+.boolean {
+  background-color: rgba(252, 27, 112, 0.25) ;
+}
+
+.string {
+  background-color: rgba(231,220,108,0.25);
+}
+
+.text {
+  background-color: rgba(231,220,108,0.5);
+}
+
+.integer {
+  background-color: rgba(97, 216, 241, 0.25);
+}
+
+.float {
+  background-color: rgba(87,194,255, 0.6);
+}
+
+.decimal {
+  background-color: rgba(87,150,255, 0.6);
+}
+
+.datetime {
+  background-color: rgba(173, 124, 255, 0.25);
+}
+
+.json {
+  background-color: rgba(164, 228, 0, 0.25);
+}
+
+.jsonb {
+  background-color: rgba(164, 228, 0, 0.45);
+}
+
+.hstore {
+  background-color: rgba(200,200,200,0.45);
+}
+
+.no-null {
+  background: repeating-linear-gradient(
+    45deg,
+    rgba(50,50,50,0.05),
+    rgba(50,50,50,0.05) 10px,
+    rgba(50,50,50,0.1) 10px,
+    rgba(50,50,50,0.1) 20px);
+}
+
+.key .no-null {
+  background: repeating-linear-gradient(
+    45deg,
+    rgba(50,50,50,0.1),
+    rgba(50,50,50,0.1) 10px,
+    rgba(50,50,50,0.25) 10px,
+    rgba(50,50,50,0.25) 20px);
+}

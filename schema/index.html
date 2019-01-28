@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <div id="header">
+      <div id='paste-schema'>
+        <label for="schema">Paste the contents of your rails schema.rb file here:</label>
+        <textarea name="schema" id="textBox" cols="30"></textarea>
+        <input type="submit" id="submit">
+      </div>
+    </div>
+    <div class='schema-area'></div>
+    <div class="key draggable">
+      <div class='header'>Key:</div>
+      <div class="string">String</div>
+      <div class="text">Text</div>
+      <div class="json">JSON</div>
+      <div class="jsonb">JSONb</div>
+      <div class="hstore">HStore</div>
+      <div class="boolean">Boolean</div>
+      <div class="integer">Integer</div>
+      <div class="float">Float</div>
+      <div class="decimal">Decimal</div>
+      <div class="datetime">DateTime</div>
+      <div class="no-null">Null: false</div>
+      <div class="array">array   = [ ]</div>
+    </div>
+    <script src="https://unpkg.com/jspdf@latest/dist/jspdf.min.js"></script>
+    <script src='./loader.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/interactjs@1.3.4/dist/interact.min.js"></script>
+    <script src='./interactive.js'></script>
+  </body>
+</html>
