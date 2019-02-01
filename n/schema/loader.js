@@ -48,7 +48,7 @@ const table = (name, customId) => {
           </table>`;
 };
 
-const row = (wholeThing) => {
+const row = (wholeThing, tableName) => {
   var type = wholeThing.match(/t\.\w*/)[0].substr(2);
   var rowName = wholeThing.match(/".*"/)[0].replace(/"/g, '');
 
