@@ -23,6 +23,10 @@ form {
   margin-bottom: 0;
 }
 
+svg, path {
+  position: fixed;
+}
+
 #header, #paste-schema {
   display: flex;
   align-items: center;
@@ -44,6 +48,7 @@ form {
 .schema-area {
   min-height: 90vh;
   min-width: 100vw;
+  z-index: -100;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -102,6 +107,10 @@ form {
 
 .decimal {
   background-color: rgba(87,150,255, 0.6);
+}
+
+.bigint {
+  background-color: rgba(50,100,255, 0.4);
 }
 
 .datetime {

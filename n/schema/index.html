@@ -9,9 +9,10 @@
         <label for="schema">Paste the contents of your rails schema.rb file here:</label>
         <textarea name="schema" id="textBox" cols="30"></textarea>
         <input type="submit" id="submit">
+        <button id='reset-button'>Reset</button>
       </div>
     </div>
-    <div class='schema-area'></div>
+    <div class='schema-area' id='svgContainer'><svg id="svg1" width="100vw" height="90vh" ></svg></div>
     <div class="key draggable">
       <div class='header'>Key:</div>
       <div class="string">String</div>
@@ -23,11 +24,12 @@
       <div class="integer">Integer</div>
       <div class="float">Float</div>
       <div class="decimal">Decimal</div>
+      <div class="bigint">BigInt</div>
       <div class="datetime">DateTime</div>
       <div class="no-null">Null: false</div>
       <div class="array">array   = [ ]</div>
     </div>
-    <script src="https://unpkg.com/jspdf@latest/dist/jspdf.min.js"></script>
+    <!-- <script src="https://unpkg.com/jspdf@latest/dist/jspdf.min.js"></script> -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src='./loader.js'></script>
     <script src="https://cdn.jsdelivr.net/npm/interactjs@1.3.4/dist/interact.min.js"></script>
