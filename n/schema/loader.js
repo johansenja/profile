@@ -74,7 +74,7 @@ const createIndex = (row, tableName) => {
 
   if (document.getElementById(tableName).querySelector('.' + columnName)) {
     document.getElementById(tableName).querySelector('.' + columnName).innerHTML += '*'
-    connectElements($(`#${columnName + tableName}svg`), $(`#${columnName + tableName}path`), $(`#${columnName + tableName}`),   $("#orange"));
+    // connectElements($(`#${columnName + tableName}svg`), $(`#${columnName + tableName}path`), $(`#${columnName + tableName}`),   $("#orange"));
   };
 };
 
