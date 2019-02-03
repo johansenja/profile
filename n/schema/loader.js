@@ -99,7 +99,11 @@ function absolute(x) {
     return (x < 0) ? -x : x;
 }
 
-function drawPath(svg, path, startX, startY, endX, endY) {
+Array.min = function( array ){
+    return Math.min.apply( Math, array );
+};
+
+function drawPath(svg, path, startX, startY, endX, endY, side) {
     // get the path's stroke width (if one wanted to be  really precize, one could use half the stroke size)
     var stroke =  parseFloat(path.attr("stroke-width"));
     // check if the svg is big enough to draw the path, if not, set heigh/width
@@ -123,11 +127,14 @@ function drawPath(svg, path, startX, startY, endX, endY) {
     // draw tha pipe-like path
     // 1. move a bit down, 2. arch,  3. move a bit to the right, 4.arch, 5. move down to the end
     path.attr("d",  "M"  + startX + " " + startY +
-                    " V" + (startY + delta) +
-                    " A" + delta + " " +  delta + " 0 0 " + arc1 + " " + (startX + delta*signum(deltaX)) + " " + (startY + 2*delta) +
-                    " H" + (endX - delta*signum(deltaX)) +
-                    " A" + delta + " " +  delta + " 0 0 " + arc2 + " " + endX + " " + (startY + 3*delta) +
-                    " V" + endY );
+                    ` H${side === 'left' ? '-' : '' }` + (endX - -startX)*0.5 +
+                    " V" + (startY + delta + endY) +
+                    ` H${side === 'left' ? '-' : '' }` + (endX - -startX)*0.5
+                    // " A" + delta + " " +  delta + " 0 0 " + arc1 + " " + (startX + delta*signum(deltaX)) + " " + (startY + 2*delta) +
+                    // " H" + (endX - delta*signum(deltaX)) +
+                    // " A" + delta + " " +  delta + " 0 0 " + arc2 + " " + endX + " " + (startY + 3*delta) +
+                    // " V" + endY );
+                    )
 }
 
 const connectAll = () => {
@@ -166,15 +173,25 @@ function connectElements(svg, path, startElem, endElem) {
 
     // calculate path's start (x,y)  coords
     // we want the x coordinate to visually result in the element's mid point
-    var startX = startCoord.left + startElem.outerWidth() - svgLeft;    // x = left offset + 0.5*width - svg's left offset
+    var startRightX = startCoord.left + startElem.outerWidth() - svgLeft;    // x = left offset + 0.5*width - svg's left offset
+    var startLeftX = startCoord.left - startElem.outerWidth() - svgLeft;    // x = left offset + 0.5*width - svg's left offset
     var startY = startCoord.top  + 0.5*startElem.outerHeight() - svgTop;        // y = top offset + height - svg's top offset
 
         // calculate path's end (x,y) coords
-    var endX = endCoord.left + endElem.outerWidth() - svgLeft;
+    var endRightX = endCoord.left + endElem.outerWidth() - svgLeft;
+    var endLeftX = endCoord.left - endElem.outerWidth() - svgLeft;
     var endY = endCoord.top - 0.85*svgTop;
+    var xs = {}
+
+    xs[absolute(startRightX - endRightX)] = [startRightX, endRightX]
+    xs[absolute(startRightX - endLeftX)] = [startRightX, endLeftX]
+    xs[absolute(startLeftX - endLeftX)] = [startLeftX, endLeftX]
+    xs[absolute(startLeftX - endRightX)] = [startLeftX, endRightX]
+
+    var startEndX = xs[Array.min(Object.keys(xs))]
 
     // call function for drawing the path
-    drawPath(svg, path, startX, startY, endX, endY);
+    drawPath(svg, path, startEndX[0], startY, startEndX[1], endY, 'hi' );
 
 }
 
@@ -185,14 +202,3 @@ $(window).resize(function() {
       connectAll();
     }
 });
-
-// const pdfGenerator = () => {
-//   var doc = new jsPDF({
-//     orientation: 'landscape',
-//     unit: 'in',
-//     format: [4, 2]
-//   })
-
-//   doc.text('Hello world!', 1, 1)
-//   doc.save('two-by-four.pdf')
-// };
