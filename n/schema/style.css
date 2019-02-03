@@ -23,8 +23,12 @@ form {
   margin-bottom: 0;
 }
 
-svg, path {
+svg {
   position: fixed;
+}
+
+path {
+  z-index: -10;
 }
 
 #header, #paste-schema {
@@ -75,7 +79,7 @@ svg, path {
 
 .key {
   position: fixed;
-  left: 3vw;
+  right: 3vw;
   bottom: 3vw;
   background-color: white;
   opacity: 70%;

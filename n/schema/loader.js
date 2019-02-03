@@ -7,7 +7,6 @@ const foreignKeys = {};
 
 resetButton.addEventListener('click', (event) => {
   event.preventDefault;
-  schemaArea.innerHTML = '';
   schemaAreaSVG.innerHTML = '';
 });
 
@@ -32,6 +31,7 @@ submit.addEventListener('click', (event) => {
       };
     };
   };
+  connectAll();
 });
 
 
@@ -44,7 +44,7 @@ const table = (name, customId) => {
   if (customId) {
     var type = customId[0].replace(/id: :/, '')
   };
-  console.log(name)
+
   return `<table class='draggable' id='${name}'>\
             ${tableHead(name)}\
             <tbody id='${name}Body'>\
@@ -80,13 +80,13 @@ const tableHead = (name) => {
 
 const createIndex = (row, tableName) => {
   const columnName = row.match(/\[".*"\]/)[0].replace(/\W/g, '');
-  console.log(`#${columnName.replace('_id', '')}sId`)
+
   if (document.getElementById(tableName).querySelector('.' + columnName)) {
     schemaAreaSVG.innerHTML += `<path id="${columnName + tableName}path"\
                                       d="M0 0"\
-                                      stroke-width="0.3em"\
-                                      style="stroke:#555; fill:none; "/>`
-    connectElements($(`#${columnName + tableName}svg`), $(`#${columnName + tableName}path`), $(`#${columnName + tableName}`), $(`#${columnName.replace('_id', '')}sId`));
+                                      stroke-width="0.15em"\
+                                      style="stroke:${'#'+Math.floor(Math.random()*16777215).toString(16)}; fill:none; "/>`
+    foreignKeys[columnName] = tableName
   };
 };
 
@@ -130,8 +130,24 @@ function drawPath(svg, path, startX, startY, endX, endY) {
                     " V" + endY );
 }
 
+const connectAll = () => {
+  for (var key in foreignKeys) {
+    var end = `#${key.replace('_id', '')}sId`
+    if (end[end.length - 4] === 'y') {
+      end = `#${key.replace('y_id', '')}iesId`
+    };
+
+    connectElements($(`#svg1`), $(`#${key + foreignKeys[key]}path`), $(`#${key + foreignKeys[key]}`), $(end));
+  }
+};
+
 function connectElements(svg, path, startElem, endElem) {
     var svgContainer= $("#svgContainer");
+
+    if (!Object.keys(endElem).length) {
+      startElem.innerHTML += '*'
+      return
+    }
 
     // if first element is lower than the second, swap!
     if(startElem.offset().top > endElem.offset().top){
@@ -155,20 +171,20 @@ function connectElements(svg, path, startElem, endElem) {
 
         // calculate path's end (x,y) coords
     var endX = endCoord.left + endElem.outerWidth() - svgLeft;
-    var endY = endCoord.top  - 0.5*svgTop;
+    var endY = endCoord.top - 0.85*svgTop;
 
     // call function for drawing the path
     drawPath(svg, path, startX, startY, endX, endY);
 
 }
 
-// $(window).resize(function () {
-//     // reset svg each time
-//     $("#svg1").attr("height", "0");
-//     $("#svg1").attr("width", "0");
-//     connectAll();
-// });
-
+$(window).resize(function() {
+    if (schemaAreaSVG.innerHTML !== '') {
+      $("#svg1").attr("height", "0");
+      $("#svg1").attr("width", "0");
+      connectAll();
+    }
+});
 
 // const pdfGenerator = () => {
 //   var doc = new jsPDF({
