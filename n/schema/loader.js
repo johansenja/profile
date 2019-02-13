@@ -82,11 +82,12 @@ const createIndex = (row, tableName) => {
   const columnName = row.match(/\[".*"\]/)[0].replace(/\W/g, '');
 
   if (document.getElementById(tableName).querySelector('.' + columnName)) {
-    schemaAreaSVG.innerHTML += `<path id="${columnName + tableName}path"\
-                                      d="M0 0"\
-                                      stroke-width="0.15em"\
-                                      style="stroke:${'#'+Math.floor(Math.random()*16777215).toString(16)}; fill:none; "/>`
-    foreignKeys[columnName] = tableName
+    // schemaAreaSVG.innerHTML += `<path id="${columnName + tableName}path"\
+    //                                   d="M0 0"\
+    //                                   stroke-width="0.15em"\
+    //                                   style="stroke:${'#'+Math.floor(Math.random()*16777215).toString(16)}; fill:none; "/>`
+    // foreignKeys[columnName] = tableName
+    schemaAreaSVG.innerHTML += '*'
   };
 };
 
