@@ -53,9 +53,13 @@ path {
   min-height: 90vh;
   min-width: 100vw;
   z-index: -100;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  /*display: flex;*/
+  /*flex-direction: row;*/
+  /*flex-wrap: wrap;*/
+  display: grid;
+  /*grid-gap: 20px;*/
+  grid-template-columns: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5%;
+  grid-template-rows: 100%;
   background:
     linear-gradient(-90deg, rgba(0,0,0,.05) 1px, transparent 1px),
     linear-gradient(rgba(0,0,0,.05) 1px, transparent 1px),

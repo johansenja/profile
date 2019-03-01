@@ -19,7 +19,7 @@ submit.addEventListener('click', (event) => {
     var match = tables[i].match(/".*"/);
     var customId = tables[i].match(/id: :[^,]*,/);
     var tableName = match[0].replace(/"/g, '');
-    schemaArea.insertAdjacentHTML('beforeend', table(tableName, customId));
+    schemaArea.insertAdjacentHTML('beforeend', table(tableName, customId, (i % 8) + 1, Math.ceil(i / 8)));
 
     var tBody = document.getElementById(`${tableName}Body`);
     var rows = tables[i].match(/t\..*[^\n]*/g);
@@ -40,12 +40,12 @@ const findTables = (schema) => {
   return schema.match(tablesRegex);
 };
 
-const table = (name, customId) => {
+const table = (name, customId, colNum, rowNum) => {
   if (customId) {
     var type = customId[0].replace(/id: :/, '')
   };
 
-  return `<table class='draggable' id='${name}'>\
+  return `<table class='draggable' id='${name}' style='grid-column: ${colNum} / span 1; grid-row: 1 / span '>\
             ${tableHead(name)}\
             <tbody id='${name}Body'>\
               <tr class=${type ? type.replace(',', '') : 'integer'} id='${name}Id'>\
